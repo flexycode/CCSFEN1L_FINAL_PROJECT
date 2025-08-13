@@ -10,6 +10,7 @@
 ### Professor: [Eliseo Q. Ramirez](https://github.com/)     
 ### No. of Units: [3 Units](https://www.youtube.com/watch?v=UVJSA2N39NU&list=RDUVJSA2N39NU&start_radio=1)
 ### Prerequisite: [CCDATRCL - DATA STRUCTURES AND ALGORITHMS](https://github.com/flexycode/CCDATRCL)
+### Course Subject Link: [Click Here](https://github.com/flexycode/CCSFEN1L)
 
 <!-- 🤖 Software Engineering 🤖 -->
 <div align="center">
