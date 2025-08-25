@@ -24,14 +24,15 @@
 - [Technology Stack](#-technology-stack)
 - [Features](#-features)
 - [System Design](#-system-design)
-- [Implementation](#-implementation)
+- [Implementation Timeline](#-implementation)
+- [Project Objectives](#-project-objectives)
 - [Evaluation](#-evaluation)
-- [System Architecture](#-system-architecture)
-- [Database Schema (ERD)](#-database-schema)
+- [System Architecture](#%EF%B8%8F-system-architecture)
+- [Database Schema (ERD)](#%EF%B8%8F-database-schema-erd)
 - [Getting Started](#-getting-started)
-- [Authentication](#-authentication)
-- [User Roles](#-user-roles)
-- [Application Flow](#-application-flow)
+- [Authentication](#authentication)
+- [User Roles](#user-roles)
+- [Application Flow](#application-flow)
 - [Contributing](#-contributing)
 - [Changelogs](#-changelogs)
 
@@ -104,7 +105,7 @@ A centralized digital platform that streamlines document workflow across various
 * **UI Components:** Angular Material + CDK
 * **Testing:** Jasmine + Karma + Protractor
 
-# 🎯 Features
+# 🎯 [Features](-features)
 
 ### Core Functionality
 
@@ -124,13 +125,13 @@ A centralized digital platform that streamlines document workflow across various
 * 🔐 Comprehensive audit logging
 * 🔐 Data encryption and secure file storage
 
-# 📊 System Design
+# 📊 [System Design](system-design)
 ### Architecture Pattern
 
 * **Desktop Application:** Electron-based architecture with local database
 * **Web Alternative:** Three-tier architecture (Frontend, API, Database)
 
-Image of System Architecture
+### Image of System Architecture
 ```
 Image 
 ```
@@ -142,8 +143,9 @@ Image
 3. **Reviewer:** Document review, status updates, routing decisions
 4. **Approver:** Final approval authority, document sign-off
 
-# 🗄️ Database Schema (ERD)
-### Core Entities
+### Database Schema (ERD)
+
+### Core Entities:
 
 * **Users:** Authentication and role management
 * **Documents:** Document metadata and file references
@@ -152,7 +154,7 @@ Image
 * **Audit_Logs:** System activity logging
 * **Document_Status:** Status tracking and history
 
-# 🚀 Implementation Timeline
+# 🚀 [Implementation](#-implementation)
 ### Phase 1: Requirements Gathering
 
 * **Stakeholder Interviews:** Conduct interviews with PDEA-NCR personnel
@@ -191,26 +193,167 @@ Image
 * **Prepare Final Presentation:** Create project demonstration and presentation materials
 * **Submit Project to PDEA NCR:** Deliver final system and documentation
 
+# 🎯 [Project Objectives](-project-objectives)
+### General Objective
+To design, develop, and implement a comprehensive Document Tracking System that digitalizes and streamlines the tracking, routing, and management of official documents within PDEA-NCR.
+
+### Specific Objectives
+
+1. User-Friendly Interface: Develop an intuitive application with secure document handling capabilities
+2. Routing System: Implement efficient document routing with real-time status tracking (95% functionality target)
+3. Role-Based Security: Integrate comprehensive access control with local user management
+4. Search Performance: Design a searchable interface with <5 second query response time and 90% accuracy
+5. User Satisfaction: Achieve 85% user satisfaction rating through structured testing and evaluation
+
+# 📜 [Evaluation](-evaluation)
+```
+Image Coming Soon!!!
+```
+
+# 🖥️ [System Architecture](--system-architecture)
+```
+This section is under development process
+```
+
+# 🗄️ [Database Schema (ERD)](--database-schema)
+```
+This section is under development process
+```
+
+# 🔧 [Getting Started](-getting-started)
+
+### Prerequisites
+```
+# For Desktop Application (Electron)
+Node.js >= 18.x
+npm or yarn
+```
+
+### Installation
+```
+# Clone the repository
+git clone https://github.com/your-team/document-tracking-system.git
+
+# Navigate to project directory
+cd document-tracking-system
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+
+# Run database migrations
+npm run db:migrate
+
+# Start the application
+npm run dev
+```
+
+# [Authentication](authentication)
+```
+This section is under development process
+```
+
+# [User Roles](user-roles)
+```
+This section is under development process
+```
+
+# [Application Flow](application-flow)
+```
+This section is under development process
+```
+
+# 👋 [Contributors](-contributors)
+
+### 🤝 Contributing
+We welcome contributions to improve the Document Tracking System. Please follow these guidelines:
+
+1.Fork the repository
+2.Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3.Commit your changes (`git commit -m '🧊 DTS: Add some AmazingFeature'`)
+4.Push to the branch (`git push origin feature/AmazingFeature`)
+5.Open a Pull Request
+
+Special thanks to all project team members:
+
+### 💼 Project Team ⚡
+
+* 😎 [Jay Arre Talosig](https://github.com/flexycode) - Machine Learning Engineer | Blockchain Developer | Bioinformatics Scientist
+* 🎯 Marvin T. Mendoza - Project Manager | Lead Developer | Systems Architect
+* 🚀 Reynan G. Jalamana - Systems Analyst | Frontend Developer | UI/UX Designer
+
+<!--  License will provide soon --> 
+# 📄 [License](https://github.com/flexycode/CCSFEN1L_FINAL_PROJECT/blob/main/LICENSE)
+This project is developed as part of academic requirements for CCSFEN1L - Software Engineering course.
+
+```
+Coming Soon In the License tab 
+```
+## National University of Manila License   
+
+The National University of Manila License grants permission to students of the National University of Manila to use, modify, and distribute this project for educational purposes within the scope of their coursework and assignments.
+
+### Usage 
+
+- You may use this project as a reference or learning material for your studies at the National University of Manila.
+- You may modify the project to suit your educational needs and requirements.
+- You may share the project with your fellow students or instructors for educational purposes.
+
+### Restrictions
+
+- You may not use this project for commercial purposes.
+- You may not redistribute or publish this project outside the National University of Manila without explicit permission.
+
+## Disclaimer
+
+This project is provided "as is" without warranty of any kind, express or implied. The National University of Manila and the project contributors disclaim any liability or responsibility for any direct, indirect, incidental, special, exemplary, or consequential damages arising out of the use or misuse of this project.
+
+### 🎯 Alignment with SDG 16
+This project directly supports **UN Sustainable Development Goal 16: Peace, Justice, and Strong Institutions** by:
+
+* Promoting transparent and accountable governance
+* Enhancing institutional effectiveness
+* Improving access to information and documentation
+* Strengthening public administration systems
+
+
+# 🔭 [Acknowledgements](-acknowledgements)     
+
+<!--  Need to revise this background info of Professor Eliseo Ramirez  -->
+### ✨ Professor
+```
+Professor Mr. Eliseo Ramirez background coming soon.
+```
 <!-- Always document your changes, pull-request, bugfix, updates, patch notes for this final project. Always use this "🧊 Flight Booking" for commiting message for "pushing code" or "Pull-request"   -->
-# 📫 Changelogs 
+# 📫 [Changelogs](-changelogs) 
 Chronological list of updates, bug fixes, new features, and other modifications for ```name of the project```.
 
-### 📦 Version 1.0.0 - Augst 14, 2025
+### 📦 Version 1.0.0 - August 14, 2025
 **Project Initialization**
 - ✨ Created initial repository structure
 - ✨ Set up project folder organization
 - ✨ Established development workflow
 - 🔧 Initial project configuration and setup
 
-### 📊 Version 1.0.1 - TBA
+### 📊 Version 1.0.1 - August 26, 2025
 **Design & Architecture**
-- ✨ TBA
-- 📋 TBA
-- 📁 TBA
-- 🗄️ TBA
-- 🍃 TBA
-- 📖 TBA
+- ✨ Database schema design and ERD creation
+- 📋 User interface mockups and wireframes
+- 📁 System architecture documentation
+- 🗄️ Technology stack finalization
+- 🍃 Development environment setup
+- 📖 Technical documentation updates
 
+🚀 Version 2.0.0 - TBA
+**Core Development Phase**
+
+- ✨ Authentication and authorization system
+- 📋 Document upload and management features
+- 🔄 Routing and workflow implementation
+- 🗄️ Database integration and ORM setup
+- 🎨 User interface development
 
 ---
 
@@ -227,7 +370,7 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 
 ---
 
-🧊 CCSFEN1L FINAL PROJECT
+🧊 CCSFEN1L FINAL PROJECT - Document Tracking System
 
 <!-- Introduction Pannel button link, it will redirect to the top -->
 
