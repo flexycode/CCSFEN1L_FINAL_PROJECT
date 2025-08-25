@@ -1,4 +1,4 @@
-# 💫 TBA
+# 💫 Document Tracking System (DTS)
 
 <!-- Background github cover with short introduction down below 
 <img src="https://github.com/flexycode/CTINFMGL/blob/main/asset/Information-Management.png" />
@@ -22,17 +22,24 @@
 <!-- Introduction down below -->
 # 🧠 [Introduction](#introduction)
 
-```
-Coming Soon
-```
+The **Document Tracking System (DTS)** is a comprehensive digital solution designed to modernize and optimize the tracking of official documents and memoranda within government institutions. This project aims to replace traditional manual document handling processes with a centralized, role-based platform that enables real-time monitoring and transparent document routing.
+Built specifically for the Philippine Drug Enforcement Agency – National Capital Region (PDEA-NCR), the system facilitates faster document retrieval, minimizes search time, and reduces reliance on physical document handling while ensuring enhanced accountability and transparency.
 
-## 🏦 Case Study:
-```
-Coming Soon
-```
+## 🏦 Case Study:PDEA-NCR Document Management
+
+### Current Challenges:
+
+* **Manual Processing:** Traditional paper-based document routing leading to inefficiencies
+* **Lack of Traceability:** Difficulty in tracking document status and location
+* **Misplaced Files:** Risk of losing important documents in manual systems
+* **Processing Delays:** Slow document approval and routing processes
+* **Limited Accountability:** Insufficient audit trails for document handling
+
+### Proposed Solution:
+A centralized digital platform that streamlines document workflow across various divisions and sections within PDEA-NCR, providing real-time status updates and comprehensive tracking capabilities.
 
 <!-- Techstacks down below (temporary need some proper decision for the group team in order to inlign for the project -->
-## 💻 Techstacks # 1
+## 💻 Techstacks Stack Options
 
 ```
 coming soon
