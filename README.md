@@ -41,9 +41,52 @@ A centralized digital platform that streamlines document workflow across various
 <!-- Techstacks down below (temporary need some proper decision for the group team in order to inlign for the project -->
 ## 💻 Techstacks Stack Options
 
-```
-coming soon
-```
+### Option 1: AngularJS/Angular Stack (Modern)
+
+* **Frontend:** Angular 17+ with TypeScript
+* **UI Framework:** Angular Material or PrimeNG
+* **State Management:** NgRx or Akita
+* **HTTP Client:** Angular HttpClient
+* **Styling:** Angular Flex Layout + SCSS/Tailwind CSS
+* **Desktop Wrapper:** Electron + Angular
+
+### Option 2: React/TypeScript Stack
+
+* **Framework:** Electron.js with React/TypeScript
+* **UI Components:** Material-UI (MUI) or Ant Design
+* **State Management:** Redux Toolkit or Zustand
+* **Styling:** Tailwind CSS or Styled Components
+
+### Option 3: Vue.js Stack
+
+* **Frontend:** Vue.js 3 + Composition API + TypeScript
+* **UI Framework:** Vuetify or Quasar
+* **State Management:** Pinia
+* **Desktop Wrapper:** Electron + Vue
+
+### Backend (Universal for all options)
+
+* **Runtime:** Node.js with TypeScript
+* **Framework:** Express.js, Fastify, or NestJS
+* **Authentication:** JWT + bcrypt or Passport.js
+* **File Upload:** Multer or Express-fileupload
+* **Validation:** Joi, Yup, or class-validator
+
+### Database Options
+
+* **Primary:** PostgreSQL or MySQL
+* **ORM:** Prisma, TypeORM, or Sequelize
+* **Migration:** Database-specific migration tools
+* **Cache:** Redis (optional)
+
+### AngularJS Specific Recommendations
+
+* **Desktop:** Electron + Angular + Angular CLI
+* **Backend:** NestJS (Angular-style backend framework)
+* **Database:** PostgreSQL + TypeORM
+* **Authentication:** Angular Guards + JWT
+* **UI Components:** Angular Material + CDK
+* **Testing:** Jasmine + Karma + Protractor
 
 ## Table of Contents
 - [Features](#features)
