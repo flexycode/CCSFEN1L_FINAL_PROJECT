@@ -1,4 +1,4 @@
-# 💫 Document Tracking System (DTS)
+# 🏢 Detention Facility Management System (DFMS)
 
 <!-- Background github cover with short introduction down below 
 <img src="https://github.com/flexycode/CTINFMGL/blob/main/asset/Information-Management.png" />
@@ -39,21 +39,22 @@
 <!-- Introduction down below -->
 # 🧠 [Introduction](#introduction)
 
-The **Document Tracking System (DTS)** is a comprehensive digital solution designed to modernize and optimize the tracking of official documents and memoranda within government institutions. This project aims to replace traditional manual document handling processes with a centralized, role-based platform that enables real-time monitoring and transparent document routing.
-Built specifically for the Philippine Drug Enforcement Agency – National Capital Region (PDEA-NCR), the system facilitates faster document retrieval, minimizes search time, and reduces reliance on physical document handling while ensuring enhanced accountability and transparency.
+The **Detention Facility Management System (DFMS)** is a comprehensive digital solution designed to automate and streamline detention operations within government correctional facilities. This project aims to modernize the management of Persons Deprived of Liberty (PDL), visitor tracking, and incident logging processes through a centralized, role-based digital platform.
+Built specifically for the Philippine Drug Enforcement Agency – National Capital Region (PDEA-NCR), the system automates critical detention operations including inmate management, visitor tracking, and comprehensive incident reporting. The DFMS facilitates efficient PDL record management, enhances security protocols, and provides data-driven insights for better facility administration.
 
-## 🏦 Case Study:PDEA-NCR Document Management
+## 🏦 Case Study: PDEA-NCR Detention Facility Operations
 
 ### Current Challenges:
 
-* **Manual Processing:** Traditional paper-based document routing leading to inefficiencies
-* **Lack of Traceability:** Difficulty in tracking document status and location
-* **Misplaced Files:** Risk of losing important documents in manual systems
-* **Processing Delays:** Slow document approval and routing processes
-* **Limited Accountability:** Insufficient audit trails for document handling
+* **Manual PDL Management:** Paper-based inmate records leading to inefficiencies and data inconsistencies
+* **Visitor Tracking Issues:** Difficulty in monitoring and logging visitor information systematically
+* **Incident Documentation:** Insufficient digital logging of facility incidents and activities
+* **Report Generation Delays:** Time-consuming manual compilation of statistics and reports
+* **Limited Data Analytics:** Lack of insights from PDL demographics and facility operations
+* **Security Concerns:** Risk of data loss and unauthorized access with manual systems
 
 ### Proposed Solution:
-A centralized digital platform that streamlines document workflow across various divisions and sections within PDEA-NCR, providing real-time status updates and comprehensive tracking capabilities.
+A centralized digital platform that automates detention facility operations, providing real-time PDL management, visitor tracking, incident logging, and comprehensive reporting capabilities for enhanced security and operational efficiency.
 
 <!-- Techstacks down below (temporary need some proper decision for the group team in order to inlign for the project -->
 # 💻 [Technology Stack](#-technology-stack)
@@ -105,25 +106,74 @@ A centralized digital platform that streamlines document workflow across various
 * **UI Components:** Angular Material + CDK
 * **Testing:** Jasmine + Karma + Protractor
 
+### Database Options
+#### Option A: MySQL (Recommended by Stakeholder)
+
+* **Database:** MySQL 8.0+
+* **ORM:** Prisma, TypeORM, or Sequelize
+* **Features:** ACID compliance, mature ecosystem, wide support
+* **Pros:** Familiar to team, extensive documentation, enterprise-ready
+
+#### Option B: PostgreSQL (Modern Recommended)
+
+* **Database:** PostgreSQL 15+
+* **ORM:** Prisma or TypeORM
+* **Features:** Advanced data types, JSON support, better performance
+* **Pros:** Superior for analytics, better concurrent handling, open source
+
+#### Option C: Modern Cloud Databases
+
+* **PlanetScale:** MySQL-compatible with branching (recommended for development)
+* **Supabase:** PostgreSQL with real-time features and built-in auth
+* **MongoDB:** NoSQL option for flexible document structures
+* **SQLite:** Lightweight option for desktop applications
+
+### Hybrid Approach (Recommended)
+typescript
+```
+Primary: PostgreSQL 15+ (Main application database)
+Cache: Redis (Session management and caching)
+Search: Elasticsearch (For advanced PDL and visitor search)
+Backup: MySQL (Disaster recovery and reporting)
+```
+
+### AngularJS Specific Recommendations
+
+* **Desktop:** Electron + Angular + Angular CLI
+* **Backend:** NestJS (Angular-style backend framework)
+* **Database:** PostgreSQL + TypeORM
+* **Authentication:** Angular Guards + JWT
+* **UI Components:** Angular Material + CDK
+* **Testing:** Jasmine + Karma + Protractor
+
 # 🎯 [Features](-features)
 
 ### Core Functionality
 
-* ✅ Role-Based Access Control (Admin, Encoder, Reviewer, Approver)
-* ✅ Document Upload & Classification with metadata tagging
-* ✅ Real-Time Document Tracking with status updates
-* ✅ Inter-Departmental Routing with approval workflows
-* ✅ Advanced Search & Filtering capabilities
-* ✅ Audit Trail & Logging for accountability
-* ✅ Report Generation with export options
-* ✅ Dashboard Analytics for workflow insights
+* **✅ PDL Record Management** - Digital profiles and status tracking for Persons Deprived of Liberty
+* **✅ Visitor Management System** - Comprehensive visitor logging and search capabilities
+* **✅ Incident Logging** - Digital documentation of facility incidents and activities
+* **✅ Report Generation** - Automated reports on PDL counts, incident logs, and activity records
+* **✅ PDL Statistics & Analytics** - Data-driven insights from PDL profiles and demographics
+* **✅ Role-Based Access Control** (Admin, Officer, Security, Medical Staff)
+* **✅ Real-Time Monitoring** - Live updates on facility status and activities
+* **✅ Search & Filtering** - Advanced search across PDL records and visitor logs
 
-### Security Features
+### Security & Compliance Features
 
-* 🔐 Secure user authentication and authorization
-* 🔐 Document access restrictions based on user roles
-* 🔐 Comprehensive audit logging
-* 🔐 Data encryption and secure file storage
+* 🔐 Secure user authentication and role-based authorization
+* 🔐 Data encryption and secure information storage
+* 🔐 Comprehensive audit logging and activity tracking
+* 🔐 GDPR and data protection compliance features
+* 🔐 Backup and disaster recovery mechanisms
+
+### Reporting & Analytics
+
+* 📊 PDL demographic analysis and statistics
+* 📊 Visitor traffic patterns and analytics
+* 📊 Incident trend analysis and reporting
+* 📊 Facility capacity and occupancy reports
+* 📊 Custom report generation with export options
 
 # 📊 [System Design](system-design)
 ### Architecture Pattern
@@ -138,10 +188,11 @@ Image
 
 ### User Roles & Permissions
 
-1. **Admin:** Full system access, user management, system configuration
-2. **Encoder:** Document upload, initial data entry, basic tracking
-3. **Reviewer:** Document review, status updates, routing decisions
-4. **Approver:** Final approval authority, document sign-off
+1. **Admin:** Full system access, user management, system configuration, all reports
+2. **Duty Officer:** PDL management, visitor approval, incident reporting, daily operations
+3. **Security Personnel:** Visitor screening, incident logging, security monitoring
+4. **Medical Staff:** PDL health records, medical incident reports (if applicable)
+5. **Report Viewer:** Read-only access to reports and statistics
 
 ### Database Schema (ERD)
 
@@ -172,10 +223,10 @@ Image
 
 ### Phase 4: Development / Coding
 
-* **Create Database Schema:** Design and implement database structure
-* **Implement PDL Module:** Develop Primary Document Logic functionality
-* **Implement Visitor Module:** Build user interface and interaction components
-* **Integrate Reporting & Statistics:** Add analytics and reporting features
+* **Create Database Schema:** Design and implement database structure for PDL, visitors, and incidents
+* **Implement PDL Module:** Develop PDL record management, profiles, and status tracking
+* **Implement Visitor Module:** Build visitor registration, logging, and management system
+* **Integrate Reporting & Statistics:** Add analytics, reporting features and PDL statistics generation
 
 ### Phase 5: Testing & Debugging
 
@@ -194,16 +245,28 @@ Image
 * **Submit Project to PDEA NCR:** Deliver final system and documentation
 
 # 🎯 [Project Objectives](-project-objectives)
+### 📢 Stakeholder Interview Update
+Following our successful stakeholder interview with PDEA Office duty officers, the project focus has been refined to address critical detention facility management needs.
+
 ### General Objective
-To design, develop, and implement a comprehensive Document Tracking System that digitalizes and streamlines the tracking, routing, and management of official documents within PDEA-NCR.
+**To automate detention operations such as inmate management, visitor tracking, and incident logging** through a comprehensive digital management system that enhances security, efficiency, and accountability in PDEA-NCR detention facilities.
 
 ### Specific Objectives
 
-1. User-Friendly Interface: Develop an intuitive application with secure document handling capabilities
-2. Routing System: Implement efficient document routing with real-time status tracking (95% functionality target)
-3. Role-Based Security: Integrate comprehensive access control with local user management
-4. Search Performance: Design a searchable interface with <5 second query response time and 90% accuracy
-5. User Satisfaction: Achieve 85% user satisfaction rating through structured testing and evaluation
+1.**📋 PDL Record Management Module**
+Digitally record, update, and retrieve profiles and status of Persons Deprived of Liberty (PDL) with secure data management and real-time updates.
+
+2.**👥 Visitor Management Module**
+Enable comprehensive visitor logging and search capabilities for streamlined tracking, security screening, and visit history management.
+
+3.**📊 Report Generation System**
+Provide automated reports on PDL counts, incident logs, histories, and activity records with export capabilities and scheduling options.
+
+4.**📈 PDL Statistics & Analytics**
+Generate comprehensive statistics based on PDL profiles for data-driven insights, demographic analysis, and operational planning.
+
+5.**🧪 System Evaluation & Testing**
+Conduct thorough alpha and beta testing with PDEA NCR users, targeting at least 80% user satisfaction rating in the final month of implementation through structured user feedback and system optimization.
 
 # 📜 [Evaluation](-evaluation)
 ```
@@ -216,9 +279,16 @@ This section is under development process
 ```
 
 # 🗄️ [Database Schema (ERD)](--database-schema)
-```
-This section is under development process
-```
+
+### Core Entities
+
+* **PDL_Records:** Person Deprived of Liberty profiles and information
+* **Visitors:** Visitor registration and tracking data
+* **Visit_Logs:** Detailed visitor session records
+* **Incidents:** Facility incident documentation and tracking
+* **Users:** System user authentication and role management
+* **Reports:** Generated reports and analytics data
+* **Audit_Logs:** System activity and security logging
 
 # 🔧 [Getting Started](-getting-started)
 
@@ -232,10 +302,10 @@ npm or yarn
 ### Installation
 ```
 # Clone the repository
-git clone https://github.com/your-team/document-tracking-system.git
+git clone https://github.com/CCSFEN1L_FINAL_PROJECT.git
 
 # Navigate to project directory
-cd document-tracking-system
+cd CCSFEN1L_FINAL_PROJECT
 
 # Install dependencies
 npm install
@@ -282,7 +352,7 @@ Special thanks to all project team members:
 
 * 😎 [Jay Arre Talosig](https://github.com/flexycode) - Machine Learning Engineer | Blockchain Developer | Bioinformatics Scientist
 * 🎯 Marvin T. Mendoza - Project Manager | Lead Developer | Systems Architect
-* 🚀 Reynan G. Jalamana - Systems Analyst | Frontend Developer | UI/UX Designer
+* 🚀 Reynan G. Jalamana - Software Engineer | Frontend Developer | UI/UX Designer
 
 <!--  License will provide soon --> 
 # 📄 [License](https://github.com/flexycode/CCSFEN1L_FINAL_PROJECT/blob/main/LICENSE)
@@ -370,7 +440,7 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 
 ---
 
-🧊 CCSFEN1L FINAL PROJECT - Document Tracking System
+🧊 CCSFEN1L FINAL PROJECT - Detention Facility Management System
 
 <!-- Introduction Pannel button link, it will redirect to the top -->
 
