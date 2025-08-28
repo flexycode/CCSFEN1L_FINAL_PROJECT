@@ -340,11 +340,11 @@ This section is under development process
 ### 🤝 Contributing
 We welcome contributions to improve the Document Tracking System. Please follow these guidelines:
 
-1.Fork the repository
-2.Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3.Commit your changes (`git commit -m '🧊 DTS: Add some AmazingFeature'`)
-4.Push to the branch (`git push origin feature/AmazingFeature`)
-5.Open a Pull Request
+* **1. Fork the repository**
+* **2. Create a feature branch** (`git checkout -b feature/AmazingFeature`)
+* **3. Commit your changes** (`git commit -m '🧊 DTS: Add some AmazingFeature'`)
+* **4. Push to the branch** (`git push origin feature/AmazingFeature`)
+* **5. Open a Pull Request**
 
 Special thanks to all project team members:
 
@@ -396,7 +396,7 @@ This project directly supports **UN Sustainable Development Goal 16: Peace, Just
 ```
 Professor Mr. Eliseo Ramirez background coming soon.
 ```
-<!-- Always document your changes, pull-request, bugfix, updates, patch notes for this final project. Always use this "🧊 Flight Booking" for commiting message for "pushing code" or "Pull-request"   -->
+<!-- Always document your changes, pull-request, bugfix, updates, patch notes for this final project. Always use this "🧊 CCSFEN1L FINAL PROJECT - Detention Facility Management System" for commiting message for "pushing code" or "Pull-request"   -->
 # 📫 [Changelogs](-changelogs) 
 Chronological list of updates, bug fixes, new features, and other modifications for ```name of the project```.
 
