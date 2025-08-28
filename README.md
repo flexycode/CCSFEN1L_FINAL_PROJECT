@@ -351,8 +351,8 @@ Special thanks to all project team members:
 ### 💼 Project Team ⚡
 
 * 😎 [Jay Arre Talosig](https://github.com/flexycode) - Machine Learning Engineer | Blockchain Developer | Bioinformatics Scientist
-* 🎯 Marvin T. Mendoza - Project Manager | Lead Developer | Systems Architect
-* 🚀 Reynan G. Jalamana - Software Engineer | Frontend Developer | UI/UX Designer
+* 🕵️ Marvin T. Mendoza - Project Manager | Lead Developer | Systems Architect
+* 🚀 [Reynan G. Jalamana](https://github.com/jalamana21) - Software Engineer | Frontend Developer | UI/UX Designer
 
 <!--  License will provide soon --> 
 # 📄 [License](https://github.com/flexycode/CCSFEN1L_FINAL_PROJECT/blob/main/LICENSE)
