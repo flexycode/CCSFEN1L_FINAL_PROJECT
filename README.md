@@ -42,7 +42,7 @@
 The **Detention Facility Management System (DFMS)** is a comprehensive digital solution designed to automate and streamline detention operations within government correctional facilities. This project aims to modernize the management of Persons Deprived of Liberty (PDL), visitor tracking, and incident logging processes through a centralized, role-based digital platform.
 The system automates critical detention operations including inmate management, visitor tracking, and comprehensive incident reporting. The DFMS facilitates efficient PDL record management, enhances security protocols, and provides data-driven insights for better facility administration.
 
-## 🏦 Case Study: PDEA-NCR Detention Facility Operations
+## 🏦 Case Study: Detention Facility Operations
 
 ### Current Challenges:
 
