@@ -59,91 +59,18 @@ A centralized digital platform that automates detention facility operations, pro
 <!-- Techstacks down below (temporary need some proper decision for the group team in order to inlign for the project -->
 # 💻 [Technology Stack](#-technology-stack)
 
-### Option 1: AngularJS/Angular Stack (Modern)
+### Option 1: Angular 17+ with TypeScript + PrimeNG (Modern)
 
 * **Frontend:** Angular 17+ with TypeScript
-* **UI Framework:** Angular Material or PrimeNG
-* **State Management:** NgRx or Akita
-* **HTTP Client:** Angular HttpClient
+* **UI Framework:** PrimeNG
+* **Desktop Wrapper:** Electron
+* **Backend:** NestJS with Node.js
+* **Database:** PostgreSQL with TypeORM
+* **Authentication:** JWT + Angular Guards
 * **Styling:** Angular Flex Layout + SCSS/Tailwind CSS
-* **Desktop Wrapper:** Electron + Angular
-
-### Option 2: React/TypeScript Stack
-
-* **Framework:** Electron.js with React/TypeScript
-* **UI Components:** Material-UI (MUI) or Ant Design
-* **State Management:** Redux Toolkit or Zustand
-* **Styling:** Tailwind CSS or Styled Components
-
-### Option 3: Vue.js Stack
-
-* **Frontend:** Vue.js 3 + Composition API + TypeScript
-* **UI Framework:** Vuetify or Quasar
-* **State Management:** Pinia
-* **Desktop Wrapper:** Electron + Vue
-
-### Backend (Universal for all options)
-
-* **Runtime:** Node.js with TypeScript
-* **Framework:** Express.js, Fastify, or NestJS
-* **Authentication:** JWT + bcrypt or Passport.js
-* **File Upload:** Multer or Express-fileupload
-* **Validation:** Joi, Yup, or class-validator
-
-### Database Options
-
-* **Primary:** PostgreSQL or MySQL
-* **ORM:** Prisma, TypeORM, or Sequelize
-* **Migration:** Database-specific migration tools
-* **Cache:** Redis (optional)
-
-### AngularJS Specific Recommendations
-
-* **Desktop:** Electron + Angular + Angular CLI
-* **Backend:** NestJS (Angular-style backend framework)
-* **Database:** PostgreSQL + TypeORM
-* **Authentication:** Angular Guards + JWT
-* **UI Components:** Angular Material + CDK
-* **Testing:** Jasmine + Karma + Protractor
-
-### Database Options
-#### Option A: MySQL (Recommended by Stakeholder)
-
-* **Database:** MySQL 8.0+
-* **ORM:** Prisma, TypeORM, or Sequelize
-* **Features:** ACID compliance, mature ecosystem, wide support
-* **Pros:** Familiar to team, extensive documentation, enterprise-ready
-
-#### Option B: PostgreSQL (Modern Recommended)
-
-* **Database:** PostgreSQL 15+
-* **ORM:** Prisma or TypeORM
-* **Features:** Advanced data types, JSON support, better performance
-* **Pros:** Superior for analytics, better concurrent handling, open source
-
-#### Option C: Modern Cloud Databases
-
-* **PlanetScale:** MySQL-compatible with branching (recommended for development)
-* **Supabase:** PostgreSQL with real-time features and built-in auth
-* **MongoDB:** NoSQL option for flexible document structures
-* **SQLite:** Lightweight option for desktop applications
-
-### Hybrid Approach (Recommended)
-typescript
-```
-Primary: PostgreSQL 15+ (Main application database)
-Cache: Redis (Session management and caching)
-Search: Elasticsearch (For advanced PDL and visitor search)
-Backup: MySQL (Disaster recovery and reporting)
-```
-
-### AngularJS Specific Recommendations
-
-* **Desktop:** Electron + Angular + Angular CLI
-* **Backend:** NestJS (Angular-style backend framework)
-* **Database:** PostgreSQL + TypeORM
-* **Authentication:** Angular Guards + JWT
-* **UI Components:** Angular Material + CDK
+* **State Management:** NgRx
+* **HTTP Client:** Angular HttpClient
+* **Additional:** Chart.js for analytics, Electron Store for local data
 * **Testing:** Jasmine + Karma + Protractor
 
 # 🎯 [Features](-features)
@@ -416,7 +343,7 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 - 🍃 Development environment setup
 - 📖 Technical documentation updates
 
-🚀 Version 2.0.0 - TBA
+### 🚀 Version 2.0.0 - September 15, 2025
 **Core Development Phase**
 
 - ✨ Authentication and authorization system
