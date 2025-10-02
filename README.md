@@ -65,7 +65,8 @@ A centralized digital platform that automates detention facility operations, pro
 * **UI Framework:** PrimeNG
 * **Desktop Wrapper:** Electron
 * **Backend:** NestJS with Node.js
-* **Database:** PostgreSQL with TypeORM
+* **Database:** PostgreSQL with TypeORM 
+* **Database:** I'm using [Neon Console](https://console.neon.tech/) 
 * **Authentication:** JWT + Angular Guards
 * **Styling:** Angular Flex Layout + SCSS/Tailwind CSS
 * **State Management:** NgRx
@@ -288,6 +289,9 @@ This project is developed as part of academic requirements for CCSFEN1L - Softwa
 ```
 Coming Soon In the License tab 
 ```
+
+<!--
+
 ## National University of Manila License   
 
 The National University of Manila License grants permission to students of the National University of Manila to use, modify, and distribute this project for educational purposes within the scope of their coursework and assignments.
@@ -306,6 +310,8 @@ The National University of Manila License grants permission to students of the N
 ## Disclaimer
 
 This project is provided "as is" without warranty of any kind, express or implied. The National University of Manila and the project contributors disclaim any liability or responsibility for any direct, indirect, incidental, special, exemplary, or consequential damages arising out of the use or misuse of this project.
+
+--> 
 
 ### 🎯 Alignment with SDG 16
 This project directly supports **UN Sustainable Development Goal 16: Peace, Justice, and Strong Institutions** by:
