@@ -1,0 +1,4 @@
+-- ========================================
+-- Updated database schema comment to Artificial Ledger
+-- Artificial Ledger Database Schema Setup
+-- ========================================
